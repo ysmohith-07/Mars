@@ -1,0 +1,16 @@
+Different node to node communications in ROS are:
+    1) Communications with topics
+    2) With services
+    3) Wtih actions
+
+
+1) WTIH TOPICS:-
+Communications via nodes is when a nodes sends message under topics to which the other nodes have subscribed.
+Types of publishing are:- 
+    -> one to one
+    -> one to many
+    -> many to one
+    -> many to many
+
+
+

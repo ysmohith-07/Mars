@@ -1,0 +1,7 @@
+The main mechanism used by ROS nodes to communicate is by sending and receiving messages. The messages are organised
+into specific categories called topics. Nodes may publish messages on a particular topic or subscribe to a topic receive 
+information.
+
+Sending of the data by the node is referred to as publishing the message.
+
+Receiving of the data by the ROS node is termed as subscribing to a topic.
