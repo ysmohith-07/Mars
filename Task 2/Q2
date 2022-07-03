@@ -4,13 +4,32 @@ Different node to node communications in ROS are:
     3) Wtih actions
 
 
-1) WTIH TOPICS:-
+1) WITH TOPICS:-
 Communications via nodes is when a nodes sends message under topics to which the other nodes have subscribed.
 Types of publishing are:- 
     -> one to one
     -> one to many
     -> many to one
     -> many to many
+
+This can be used in cases where continuous data is being sent, Example:
+    1) Sensory data , there might be a need for multiple nodes to be able to recieve this data. 
+    2) Command data , such as publishing the velocity here different nodes might have the need to recieve this command.
+
+
+
+2) WITH SERVICE:-
+Communication via service is done by pair of messages (only one to one), which is a request/reply architecture. Where a ROS node offers a service under a string name, and a client node calls the service by sending the request message awaiting a reply. 
+Service is handy when there has to be two way communication between two nodes. Example: 
+    1)When you send a data to get back a response. 
+    2)When the node controlling an actuator has to get data from a node that does computation (quick actions).
+
+
+3) WITH ACTIONS:- 
+Actions execute with a client server interaction, which makes it possible for two way communication between nodes in a long term. An action has a goal feedback and result.
+Actions are handy when a goal that is called for needs to be canceled. Example:
+    1) Perciption routines that gets trigrred due to sensors. 
+    2) When multiple contradicting commands are to be given, actions can be used to handle the cancelled goals.
 
 
 
